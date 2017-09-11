@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lilja.thebetterstudent.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_side_margin"
+                    android:layout_marginRight="@dimen/layout_side_margin"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/text_view_padding"
+                        android:text="@string/student_A"
+                        android:textColor="#616161"
+                        android:textSize="@dimen/student_text_size" />
+
+                    <TextView
+                        android:id="@+id/student_a_score"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/text_view_padding"
+                        android:text="@string/score"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/zero_text_size" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/button_margin"
+                        android:onClick="addFiveStudentA"
+                        android:text="@string/grade5"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/button_margin"
+                        android:layout_marginTop="@dimen/button_margin"
+                        android:onClick="addFourStudentA"
+                        android:text="@string/grade4"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/button_margin"
+                        android:layout_marginTop="@dimen/button_margin"
+                        android:onClick="addThreeStudentA"
+                        android:text="@string/grade3"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/button_margin"
+                        android:layout_marginTop="@dimen/button_margin"
+                        android:onClick="addTwoStudentA"
+                        android:text="@string/grade2"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/button_margin"
+                        android:layout_marginTop="@dimen/button_margin"
+                        android:onClick="AverageStudentA"
+                        android:text="@string/average"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/darker_gray"></View>
+
+                <LinearLayout
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/layout_side_margin"
+                    android:layout_marginRight="@dimen/layout_side_margin"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_margin_top"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/text_view_padding"
+                        android:text="@string/student_B"
+                        android:textColor="#616161" />
+
+                    <TextView
+                        android:id="@+id/student_b_score"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center_horizontal"
+                        android:padding="@dimen/text_view_padding"
+                        android:text="@string/score"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/zero_text_size" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/button_margin"
+                        android:onClick="addFiveStudentB"
+                        android:text="@string/grade5"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/button_margin"
+                        android:layout_marginTop="@dimen/button_margin"
+                        android:onClick="addFourStudentB"
+                        android:text="@string/grade4"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/button_margin"
+                        android:layout_marginTop="@dimen/button_margin"
+                        android:onClick="addThreeStudentB"
+                        android:text="@string/grade3"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/button_margin"
+                        android:layout_marginTop="@dimen/button_margin"
+                        android:onClick="addTwoStudentB"
+                        android:text="@string/grade2"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/button_margin"
+                        android:layout_marginTop="@dimen/button_margin"
+                        android:onClick="AverageStudentB"
+                        android:text="@string/average"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/the_best_score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/layout_side_margin"
+            android:textSize="@dimen/text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin_top"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="45dp"
+                android:layout_marginLeft="20sp"
+                android:onClick="reset"
+                android:text="@string/which_better"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50sp"
+                android:layout_marginRight="15dp"
+                android:onClick="resetAll"
+                android:text="@string/reset"
+                android:textColor="@android:color/white" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
